@@ -86,12 +86,15 @@
 
 
 
-
     // 7. sort Exercise
     // Sort the people alphabetically by last name
-    // const result = people.join('')
-    // console.table(result) 
+    // const result = people.sort((first, second) => {
+    //   const [lastOneName, firstOneName] = first.split(',');
+    //   const [lastTwoName, firstTwoName] = second.split(',');
+    //   return lastOneName > lastTwoName ? 1 : -1;
+    // });
 
+    // console.table(result)
 
 
 
@@ -100,50 +103,27 @@
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
-    
-    // function mostFrequentWord(arr, n)
-    // {
-        
-    //     const freq = new Map();
-    //     const occurrence = new Map();
-    //     let max = 0;
-    //     let result;
-    //     let  k = 1;
- 
-    //     for (let i = 0; i < n; i++) {
-    //         if (occurrence.has(arr[i])== true ) {
-    //             continue;
-    //         }
- 
-    //         occurrence.set(arr[i],k),k++;
-    //     }
- 
-    //     for (let i = 0; i < n; i++) {
- 
-    //         // freq[arr[i]]++;
-    //         let x=0;
-    //         if(freq.has(arr[i])==true)
-    //             x= freq.get(arr[i]);
-    //         freq.set(arr[i],x+1);
-    //         if (max <= freq.get(arr[i])) {
- 
-    //             if (max < freq.get(arr[i])) {
-    //                 max = freq.get(arr[i]);
-    //                 result = arr[i];
-    //             }
-    //             else {
-    //                 if (occurrence.get(result)
-    //                     < occurrence.get(arr[i])) {
-    //                     max = freq.get(arr[i]);
-    //                     result = arr[i];
-    //                 }
-    //             }
-    //         }
-    //     }
- 
-    //     return result;
+
+    //let occurances = [];
+
+    // for (let i = 0; i<data.length; i++) {
+    //   const word = data[i]
+    //   // if (occurances[word]) {
+    //   //   occurances[word]++;
+    //   // } else {
+    //   //   occurances[word] = 1;
+    //   // }
+    //   occurances[word] = (occurances[word] + 1) || 1;
     // }
 
-    // let n = data.length;
- 
-    // console.log(mostFrequentWord(data, n));
+    //console.log(occurances);
+
+    /*Using Reduce Method*/
+    // const result = data.reduce( (acc, current) => {
+    //   acc[current] = (acc[current] + 1) || 1;
+    //   return acc;
+    // }, {});
+
+    // console.log(result);
+
+    
