@@ -42,6 +42,9 @@ const people = [
 //   console.log(result)
 
   // delete the comment with the ID of 823423
-  //const result = comments.findIndex(element => element.id == 823423);
-  const {a : {text1, id1},b : {text2, id2},c : {text3, id3},d : {text4, id4},e : {text5, id5}} = comments;
-  console.log(`hello im ${a}`)
+  //first one but the problem here we will get empty in comments[2] so it's a wrong method
+  //delete comments[2];
+  //console.log(comments)
+  //second one with filter method
+  //const result = comments.filter(elem => elem.id !== 823423 )
+  //console.log(result)
